@@ -3,7 +3,7 @@
 <h1>Student Scores</h1>
 <form method="post" action="{% url 'index' %}">
 {% csrf_token %}
-<table class="table table-bordered table-dark">
+<table class="table table-bordered table-light">
 <tr><th>Name</th><th>Score</th><th>Action</th></tr>
 {% if not form.instance.id %} <!-- check to see if edit button was clicked on a row -->
 <tr>
