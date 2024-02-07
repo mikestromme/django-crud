@@ -3,11 +3,11 @@ from score.models import Score
 from score.forms import ScoreForm
 
 def index(request):
-    context = {}
+    context = {} # empty context object needed to be able to use dynamic html
     form = ScoreForm()
     scores = Score.objects.all()
     context['scores'] = scores
-    context['title'] = 'Home'
+    context['title'] = 'You are Home' # set title for tab
     if request.method == 'POST':
         if 'save' in request.POST:
             pk = request.POST.get('save')
