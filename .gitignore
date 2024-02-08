@@ -7,3 +7,4 @@ local_settings.py
 *uwsgi*
 public
 db.sqlite3
+venv/
